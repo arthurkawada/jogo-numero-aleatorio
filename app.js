@@ -1,4 +1,4 @@
-let listaNumeros = [];
+
 let numeroMaximo = prompt('Digite um número máximo');
 let numeroSecreto = gerarNumeroAleatorio(); 
 let contador = 1;
@@ -18,17 +18,8 @@ function exibirMensagemInicial() {
 }
 
 function gerarNumeroAleatorio() {
-   let numeroEscolhido = parseInt(Math.random()*numeroMaximo + 1);
-   // let qntElementosLista = listaNumeros.length;
-   // if (qntElementosLista == numeroMaximo){
-   //    listaNumeros = [];
-   // }
-   // if (listaNumeros.includes(numeroEscolhido)){
-   //    return gerarNumeroAleatorio();
-   // } else {
-   //    listaNumeros.push(numeroEscolhido);
-   //    return numeroEscolhido;
-   // }
+   let numeroSecreto=parseInt(Math.random()*numeroMaximo + 1);
+   return numeroSecreto;
 }
 
 function verificarChute(){
